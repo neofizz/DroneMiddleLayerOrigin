@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="instance" default = "0"/>
+	<arg name="drone" default="default_drone"/>
+	<arg name="localization" default="mocap"/>
+	<arg name="loglevel"/>
+	
+	<group if="$(eval loglevel == 'info')">
+		<env name="ROSCONSOLE_CONFIG_FILE" value="$(find adapter_space)/config/rosconsole_info.config"/>
+		<node name="AdapterSpace$(arg instance)_$(arg drone)" pkg="adapter_space" type="adapter" output="screen">
+			<param name="drone" value="$(arg drone)"/>
+			<param name="instance" value="$(arg instance)"/>
+			<param name="localization" value="$(arg localization)"/>
+		</node>
+	</group>
+
+	<group if="$(eval loglevel == 'all')">
+		<env name="ROSCONSOLE_CONFIG_FILE" value="$(find adapter_space)/config/rosconsole_all.config"/>
+		<node name="AdapterSpace_$(arg drone)" pkg="adapter_space" type="adapter" output="screen">
+			<param name="drone" value="$(arg drone)"/>
+			<param name="instance" value="$(arg instance)"/>
+			<param name="localization" value="$(arg localization)"/>
+		</node>
+	</group>
+	
+</launch>

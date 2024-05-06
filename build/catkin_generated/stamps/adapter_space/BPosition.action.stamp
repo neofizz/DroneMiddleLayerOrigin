@@ -1,0 +1,10 @@
+# goal
+string kind
+string mode
+---
+# result
+geographic_msgs/GeoPose geoPose
+geometry_msgs/Pose twistPose
+---
+# feedback
+string status

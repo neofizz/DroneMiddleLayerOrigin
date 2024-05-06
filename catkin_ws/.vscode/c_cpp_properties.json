@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/devel/include/**",
+                "/opt/ros/noetic/include/**",
+                "/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/src/adapter_space/include/**",
+                "/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/src/go_swig_layer/include/**",
+                "/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/src/uniform_mission_space/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/src/uniform_mission_space/include",
+                "/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/src/uniform_mission_space/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

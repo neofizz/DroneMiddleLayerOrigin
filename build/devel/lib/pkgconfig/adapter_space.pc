@@ -1,0 +1,8 @@
+prefix=/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/build/devel
+
+Name: adapter_space
+Description: Description of adapter_space
+Version: 0.0.0
+Cflags: -I/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/build/devel/include -I/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/src/adapter_space/include
+Libs: -L${prefix}/lib -ladapter_space
+Requires: message_runtime roscpp actionlib_msgs actionlib geographic_msgs geometry_msgs sensor_msgs std_msgs

@@ -1,0 +1,8 @@
+# goal
+bool shouldArm
+---
+# result
+bool result
+---
+# feedback
+bool isArmed

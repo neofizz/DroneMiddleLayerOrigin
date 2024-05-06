@@ -1,0 +1,14 @@
+# goal
+string type
+---
+# result
+bool isArmed
+bool isConnected
+bool isGuided
+bool hasManualInput
+string mode
+uint32 system_status
+uint32 landedState
+---
+# feedback
+string info

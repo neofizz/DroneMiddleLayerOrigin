@@ -1,0 +1,8 @@
+# goal
+uint32 max_duration
+---
+# result
+uint32 duration
+---
+# feedback
+uint32 current_time

@@ -1,0 +1,9 @@
+# goal
+bool isAbsolute
+float64 altitude
+---
+# result
+bool result
+---
+# feedback
+float64 altitude

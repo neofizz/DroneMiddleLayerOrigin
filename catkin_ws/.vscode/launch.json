@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ROS: Launch Adapter",
+            "request": "launch",
+            "target": "/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/src/adapter_space/launch/adapter.launch",
+            "launch": [
+                "rviz",
+                "gz",
+                "gzclient",
+                "gzserver"
+            ],
+            "type": "ros",
+            "arguments": ["loglevel:=info", "drone:=Drone1"]
+        },
+        {
+            "name": "ROS: Launch Uniform",
+            "request": "launch",
+            "target": "/home/fizzpin/Home/workspaces/DroneMiddleLayer/DroneMiddleLayer/catkin_ws/src/uniform_mission_space/launch/uniform.launch",
+            "launch": [
+                "rviz",
+                "gz",
+                "gzclient",
+                "gzserver"
+            ],
+            "type": "ros",
+            "arguments": ["loglevel:=info", "drone:=Drone1"]
+        }
+    ]
+}

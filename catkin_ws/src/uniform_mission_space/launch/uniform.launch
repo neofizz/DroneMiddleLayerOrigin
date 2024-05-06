@@ -1,0 +1,22 @@
+<launch>
+	<arg name="instance" default = "0"/>
+	<arg name="drone" default="default_drone"/>
+	<arg name="loglevel" default ="info"/>
+	
+	<group if="$(eval loglevel == 'info')">
+		<env name="ROSCONSOLE_CONFIG_FILE" value="$(find uniform_mission_space)/config/rosconsole_info.config"/>
+		<node name="UniformSpace$(arg instance)_$(arg drone)" pkg="uniform_mission_space" type="uniform" output="screen">
+			<param name="drone" value="$(arg drone)"/>
+			<param name="instance" value="$(arg instance)"/>
+		</node>
+	</group>
+
+	<group if="$(eval loglevel == 'all')">
+		<env name="ROSCONSOLE_CONFIG_FILE" value="$(find uniform_mission_space)/config/rosconsole_all.config"/>
+		<node name="UniformSpace$(arg instance)_$(arg drone)" pkg="uniform_mission_space" type="uniform" output="screen">
+			<param name="drone" value="$(arg drone)"/>
+			<param name="instance" value="$(arg instance)"/>
+		</node>
+	</group>
+	
+</launch>

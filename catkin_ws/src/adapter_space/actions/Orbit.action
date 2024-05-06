@@ -1,0 +1,8 @@
+# goal
+float64 radius
+---
+# result
+bool result
+---
+# feedback
+string status

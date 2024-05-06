@@ -1,0 +1,8 @@
+# goal
+string debug
+---
+# result
+bool result
+---
+# feedback
+bool isDebugged

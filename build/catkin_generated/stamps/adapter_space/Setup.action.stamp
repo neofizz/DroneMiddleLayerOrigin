@@ -1,0 +1,8 @@
+# goal
+bool initOffboard
+---
+# result
+bool result
+---
+# feedback
+bool isSetup

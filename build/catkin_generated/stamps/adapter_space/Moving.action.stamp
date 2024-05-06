@@ -1,0 +1,32 @@
+# goal
+string mode
+bool isAbsolute
+
+float64 longitude
+float64 latitude
+float64 altitude
+
+float64 x
+float64 y
+float64 z
+---
+# result
+bool result
+
+float64 longitude
+float64 latitude
+float64 altitude
+
+float64 x
+float64 y
+float64 z
+
+---
+# feedback
+float64 longitude
+float64 latitude
+float64 altitude
+
+float64 x
+float64 y
+float64 z
