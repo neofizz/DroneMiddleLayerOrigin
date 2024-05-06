@@ -4,7 +4,8 @@ using namespace std;
 
 namespace AdapterSpace
 {
-	AdapterActionBase::AdapterActionBase(string droneName, string name) : AdapterSpaceBase(droneName, name, "Action")
+	// just a silly comment.
+	AdapterActionBase::AdapterActionBase(string droneDroneName, string name) : AdapterSpaceBase(droneName, name, "Action")
 	{
 	}
 }
